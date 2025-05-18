@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="product" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+    /*@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "IBM Plex Sans", sans-serif;
+        }
+        .name{
+            padding: 5px;
+        }
+        
+        .menu{
+            display:inline-block;
+            line-height: 10px;
+            padding: 5px 20px;
+            margin: 20px 0px;
+            border-right: solid silver;
+            border-left: solid silver;
+        }
+        a{
+            color: #fff;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        a:hover{
+            color: rgb(255, 126, 147);
+            text-decoration: underline;
+        }
+        main{
+            padding: 20px;
+            line-height: 50px;
+        }
+
+
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .main{
+            border: 1px solid silver;
+            width: 800px;
+            margin: auto;
+            
+        }
+        .main-img{
+            text-align: center;
+        }
+        .big-img{
+            display: inline-block;
+            width: 450px;
+        }
+        .catalog{
+            width: 801px;
+            margin: auto;
+            border: 1px solid silver;
+
+        }
+        .small-img{
+            display: inline-block;
+            border-left: 1px solid silver;
+            width: 195px;
+            margin: 0;
+            padding: 0;
+            
+
+        }
+        .small1, .small2, .small3, .small4{
+            width: 196px;
+            margin: 0;
+            padding: 0;
+        }
+        .small-img:hover{
+            transform: scale(1.5);
+            border: 2px solid rgb(16, 16, 16);
+        }
+        .name-big{
+            padding-left: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        ul{
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            list-style: none;
+        }
+
+        .a-black{
+            color: #333;
+        }
+
+        
+        .charact{
+            
+            display: inline-block;
+            width: 350px;
+            margin: 20px;
+        }
+        .charact .opisanie{
+            font-size: 12px;
+            color: #555555;
+            line-height: 20px;
+            
+        }
+        .otz{
+            font-size: 14px;
+            color: #555555;
+            line-height: 20px;
+            padding-bottom: 14px;
+        }
+        .rating{
+            display: inline-block;
+            border: solid silver;
+            width: 350px;
+            padding: 10px;
+            margin: 15px;
+        }
+
+
+        footer{
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .star{
+            color: rgb(255, 225, 0);
+            display: inline;
+        }
+        button{
+            font-size: large;
+            background-color:#353434;
+            color: #fff;
+            padding: 3px;
+            border:solid #060606;
+            border-radius: 5px;
+            margin-left: 55px;
+            cursor: pointer;
+        }
+        button:hover{
+            color: palevioletred;
+        }
+        .size{
+            display: inline-block;
+            padding-right: 5px;
+        }
+        .size:hover{
+            color: palevioletred;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <p class="name">SPORT-ORIENT-SHOP</p>
+    <nav>
+        <div class="menu"><a href="#" class="link">Главная</a></div>
+        <div class="menu"><a href="#" class="link">Каталог</a></div>
+        <div class="menu"><a href="#" class="link">О нас</a></div>
+        <div class="menu"><a href="#" class="link">Контакты</a></div>
+        <div class="menu"><a href="#" class="link">Корзина</a></div>
+        
+    </nav>
+    </header>
+
+    <main>
+       
+        <section class="our-toars">
+        <div class="main">
+            <h2>Sport-orient-shop-catalog</h2>
+            <div class="main-img"><img src="head.jpg" alt="spike" class="big-img"></div>
+            <div class="charact">
+            <p class="name-big">Беговая повязка на голову</p>
+            <p class="opisanie">Беговая повязка отлично подойдет как мужщинам, так и женщинам. Материал отлично тянется и никогда не доставит неудобств при использовании. Отличный выбор для подарка друзьям, семье, любимому человеку.</p>
+            <ul class="first-ul">
+                <li>Цена: <b>1200p</b></li>
+                <li>Размер: <p class="size">XS</p><p class="size">S</p><p class="size">M</p><p class="size">L</p></li>
+                <li><button>Добавить в корзину</button></li>
+            </ul>
+            </div>
+            <div class="rating">
+                <ul>
+                    <li><a href="#" class="a-black">Написать отзыв</a></li>
+                    <li>Рейтинг <p class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</p></li>
+                    <li>Отзывы<a href="#" class="a-black">(1876)</a>:</li>
+                    <li><p class="otz">Анастасия Рудная: Беру всегда в этом магазине одежду. Жалоб пока не было)</p></li>
+                    <li><p class="otz">Беляков Илья: Качество всегда на высоте!</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="small-img"><a href="Zadacha4-spike.html"><img src="spike.jpg" alt="" class="small1"></a></div>
+            <div class="small-img"><a href="Zadacha4-short.html"><img src="shorts.jpg" alt="" class="small2"></a></div>
+            <div class="small-img"><a href="Zadacha4-t-sh.html"><img src="t-shirt.jpeg" alt="" class="small3"></a></div>
+            <div class="small-img"><a href="Zadacha4-socks.html"><img src="socks.jpg" alt="" class="small4"></a></div>
+        </div>
+           
+    </main>
+
+
+    <footer>
+
+        <p>Site Designed By: Bolseva Anna<br>
+            <a href="#">Anya.bolshic05@mail.ru</a><br>
+        © 2025 Все права защищены</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            background-color: rgb(247, 170, 183);
+            margin: 20px;
+            padding: 20px;
+            list-style: none;
+            counter-reset: my-counter;
+            width: 30%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        li::before{
+            counter-increment: my-counter;
+            content: counter(my-counter) ". ";
+        }
+        li{
+            background-color: rgb(195, 92, 127);
+            color: white;
+            padding: 10px;
+            margin: 10px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        span{
+            background-color: rgb(192, 63, 106);
+            display: inline-block;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+    </ol>
+    
+</body>
+</html>
