@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="laba1" content="Sport-orient-shop">
+    <title>Sport-orient-shop-info</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            display:inline-block;
+            line-height: 30px;
+            padding: 10px 40px;
+
+            
+        }
+        a{
+            color: #fff;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #696969;
+            padding-bottom: 10px;
+        }
+        
+        
+        .payment-methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .payment-method {
+            position: relative;
+            width: 200px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .payment-icon {
+            display: inline-block;
+            width: 60px;
+            height: 40px;
+            margin-right: 10px;
+            vertical-align: middle;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .visa {
+            background-image: url("visa.png");
+        }
+        
+        .mastercard {
+            background-image: url("mastercard.webp");
+        }
+        
+        .paypal {
+            background-image: url("paypal.png");
+        }
+        
+        .mir {
+            background-image: url("mir.png");
+        }
+        .delivery-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .delivery-table th, .delivery-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .delivery-table th {
+            background-color: #666666;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        
+        .delivery-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .delivery-table tr:hover {
+            background-color: #e1e1e1;
+        }
+        
+        .delivery-table td:first-child {
+            font-weight: bold;
+        }
+        
+        .free-delivery {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .express-badge {
+            background-color: #e74c3c;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p>SPORT-ORIENT-SHOP</p>
+    <nav>
+        <div class="menu"><a href="#" class="link">Главная</a></div>
+        <div class="menu"><a href="#" class="link">Каталог</a></div>
+        <div class="menu"><a href="#" class="link">О нас</a></div>
+        <div class="menu"><a href="#" class="link">Контакты</a></div>
+        <div class="menu"><a href="#" class="link">Корзина</a></div>
+    </nav>
+    </header>
+    
+    <main class="container">
+        <section id="payment">
+            <h2>Способы оплаты</h2>
+            <p>В нашем интернет-магазине SPORT-ORIENT-SHOP доступны следующие способы оплаты:</p>
+                
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <div class="payment-icon visa"></div>
+                        <span>Visa</span>
+                        <p>Оплата картами Visa и Visa Electron</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon mastercard"></div>
+                        <span>Mastercard</span>
+                        <p>Оплата картами Mastercard и Maestro</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon paypal"></div>
+                        <span>PayPal</span>
+                        <p>Безопасная оплата через систему PayPal</p>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="payment-icon mir"></div>
+                        <span>Мир</span>
+                        <p>Оплата картами национальной платежной системы "Мир"</p>
+                    </div>
+                </div>
+                
+                <p>Также доступна оплата наличными при получении (только для доставки курьером) и банковским переводом по счету.</p>
+            </section>
+            <section id="delivery">
+                <h2>Стоимость и условия доставки</h2>
+                <p>Мы предлагаем несколько вариантов доставки по всей России. Сроки и стоимость зависят от вашего региона и выбранного способа:</p>
+                
+                <table class="delivery-table">
+                    <thead>
+                        <tr>
+                            <th>Способ доставки</th>
+                            <th>Регион доставки</th>
+                            <th>Сроки</th>
+                            <th>Стоимость</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Курьерская доставка</td>
+                            <td>Москва (в пределах МКАД)</td>
+                            <td>1-2 рабочих дня</td>
+                            <td class="free-delivery">Бесплатно</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка</td>
+                            <td>Московская область (до 20 км от МКАД)</td>
+                            <td>2-3 рабочих дня</td>
+                            <td>300 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка</td>
+                            <td>Санкт-Петербург (в пределах КАД)</td>
+                            <td>2-3 рабочих дня</td>
+                            <td>250 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Курьерская доставка</td>
+                            <td>Города-миллионники (Екатеринбург, Казань и др.)</td>
+                            <td>3-5 рабочих дней</td>
+                            <td>400 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Почта России</td>
+                            <td>Вся Россия</td>
+                            <td>5-14 рабочих дней</td>
+                            <td>500 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>СДЭК</td>
+                            <td>Вся Россия (до пункта выдачи)</td>
+                            <td>2-7 рабочих дней</td>
+                            <td>от 350 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Самовывоз</td>
+                            <td>Москва, ул. Техническая, 15</td>
+                            <td>1 рабочий день</td>
+                            <td class="free-delivery">Бесплатно</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Экспресс-доставка <span class="express-badge">EXPRESS</span></td>
+                            <td>Москва и МО</td>
+                            <td>В день заказа</td>
+                            <td>1 500 руб.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Экспресс-доставка <span class="express-badge">EXPRESS</span></td>
+                            <td>Санкт-Петербург</td>
+                            <td>1 рабочий день</td>
+                            <td>1 200 руб.</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    </main>
+    <footer>
+
+        <p>Site Designed By: Bolseva Anna<br>
+            <a href="#">Anya.bolshic05@mail.ru</a><br>
+        © 2025 Все права защищены</p>
+    </footer>
+</body>
+</html>
